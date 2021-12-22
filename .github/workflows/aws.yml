@@ -55,7 +55,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: aws-ecs-demo-ecr
+        ECR_REPOSITORY: dbc-passenger-sandbox
         IMAGE_TAG: ${{ github.sha }}
       run: |
         # Build a docker container and
@@ -81,6 +81,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: aws-ecs-demo-service
-        cluster: aws-ecs-demo-cluster
+        service: dbc-passenger-service
+        cluster: dbc-passenger-cluster-sandbox
         wait-for-service-stability: true
