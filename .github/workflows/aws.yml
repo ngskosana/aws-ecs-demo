@@ -81,6 +81,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: dbc-passenger-service
-        cluster: dbc-passenger-cluster-sandbox
+        service: dbc-passenger-playground-service
+        cluster: dbc-passenger-cluster-playground
         wait-for-service-stability: true
