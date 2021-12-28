@@ -26,10 +26,10 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-      "memoryReservation": 128,
+      "memoryReservation": 500,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "685431386451.dkr.ecr.us-east-2.amazonaws.com/dbc-passenger-sandbox:37ce6ded83ba6a89cf38f0193494c5b996e9856f",
+      "image": "685431386451.dkr.ecr.us-east-2.amazonaws.com/dbc-passenger-sandbox",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -56,7 +56,7 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:685431386451:task-definition/dbc-passenger-task-definition-playground:7",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:685431386451:task-definition/dbc-passenger-task-definition-playground:23",
   "family": "dbc-passenger-task-definition-playground",
   "requiresAttributes": [
     {
@@ -79,7 +79,7 @@
   "networkMode": null,
   "runtimePlatform": null,
   "cpu": null,
-  "revision": 7,
+  "revision": 23,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
